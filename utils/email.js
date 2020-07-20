@@ -54,9 +54,9 @@ module.exports = class Email {
     await this.newTransport().sendMail(mailOptions);
   }
 
-  // async sendWelcome() {
-  //   await this.send('welcome', 'Welcome to the Natours Family!');
-  // }
+  async sendWelcome() {
+    await this.send('welcome', 'Welcome to the Natours Family!');
+  }
 
   async sendPasswordReset() {
     await this.send(
